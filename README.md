@@ -1,5 +1,23 @@
 # LaBook
 
+## Install
+
+```sh
+npm install
+```
+
+## Run Build
+
+```sh
+npm run build
+```
+
+## Run Dev
+
+```sh
+npm run dev
+```
+
 ## ESTRUTURA DE DADOS  
   
 * ## Usuários

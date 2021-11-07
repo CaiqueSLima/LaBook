@@ -18,9 +18,9 @@ npm run build
 npm run dev
 ```
 
-## ESTRUTURA DE DADOS  
+## Data Structure  
   
-* ## Usuários
+* ## Users
   * id
   * name
   * email
@@ -35,7 +35,7 @@ npm run dev
    
 ---
 
-## CRIAÇÃO DE TABELAS - MySql
+## Table Creation - MySql
 
 ```sql
 CREATE TABLE labook_users(
@@ -60,28 +60,28 @@ CREATE TABLE labook_posts(
 
 ## ENDPOINTS 
 
-* ## Cadastrar usuário
-  * Método: POST
+* ## User SignUp
+  * Method: POST
   * Path: `/signup`
   * Body:
     * name (obrigatório)
     * email (obrigatório)
     * password (obrigatório)
-  * Body de resposta:
+  * Response:
     * message
     * token
 
-* ## Login Usuário
-  * Método: POST
+* ## User Login
+  * Method: POST
   * Path: `/login`
   * Body:
     * email (obrigatório)
     * password (obrigatório)
-  * Body de resposta:
+  * Response:
     * token
 
-* ## Criar Post
-  * Método: POST
+* ## Create post
+  * Method: POST
   * Path: `/post`
   * headers:
     * authorization: token
@@ -91,10 +91,10 @@ CREATE TABLE labook_posts(
     * type: `"normal" || "evento"` (obrigatório)
 
 
-* ## Pegar post pelo id
-  * Método: GET
+* ## Get post by id
+  * Method: GET
   * Path: `/post/:id`
-  * Body de Resposta: (retornar um erro se não encontrar)
+  * Response: (return an error if nothing is found)
     * id
     * picture
     * description
@@ -102,10 +102,10 @@ CREATE TABLE labook_posts(
     * type
     * userId
 
-* ## Pegar tarefa pelo id
-  * Método: GET
+* ## Get task by id
+  * Method: GET
   * Path: `/task/:id`
-  * Body de Resposta: (retornar um erro se não encontrar)
+  * Response: (return an error if nothing is found)
     * id
     * picture 
     * description

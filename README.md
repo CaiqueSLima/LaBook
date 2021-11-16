@@ -98,17 +98,6 @@ CREATE TABLE labook_posts(
     * id
     * picture
     * description
-    * creationDate
-    * type
-    * userId
-
-* ## Get task by id
-  * Method: GET
-  * Path: `/task/:id`
-  * Response: (return an error if nothing is found)
-    * id
-    * picture 
-    * description
     * creationDate (formato `DD-MM-YYYY`)
     * type
     * userId
